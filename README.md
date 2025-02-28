@@ -27,7 +27,7 @@ Run the file `.conkyrc_wacurrent` from terminal (the first time you run this con
 ## Screenshot
 
 ![](https://github.com/TheHeadlessOfficial/weather_currentWA/blob/main/.conky/docs/screenshot.png)<br>
-
+`UVIndex` and `AQI` change colors based on their value.
 <br>
 <br>
 <br>
