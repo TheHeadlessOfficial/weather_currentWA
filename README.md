@@ -1,6 +1,6 @@
 # Conky Weather CURRENT (by Weatherapi)
  
-A conky (written in Python) that shows the CURRENT weather, using [Weatherapi API](https://www.weatherapi.com/) website.<br>
+A conky (with a script written in Python) that shows the CURRENT weather, using [Weatherapi API](https://www.weatherapi.com/) website.<br>
 
 <br>
 <br>
