@@ -136,6 +136,30 @@ try:
     clouds = data['current']['cloud']
     tempfeelslikec = data['current']['feelslike_c']
     tempfeelslikef = data['current']['feelslike_f']
+    try:
+        windchillc = data['current']['windchill_c']
+    except:
+        windchillc = vtext
+    try:
+        windchillf = data['current']['windchill_f']
+    except:
+        windchillf = vtext
+    try:
+        heatindexc = data['current']['heatindex_c']
+    except:
+        heatindexc = vtext
+    try:
+        heatindexf = data['current']['heatindex_f']
+    except:
+        heatindexf = vtext
+    try:
+        dewpointc = data['current']['dewpoint_c']
+    except:
+        dewpointc = vtext
+    try:
+        dewpointf = data['current']['dewpoint_f']
+    except:
+        dewpointf = vtext
     viskm = data['current']['vis_km']
     vismh = data['current']['vis_miles']
     uv = data['current']['uv']
@@ -192,6 +216,12 @@ try:
     fo.write('pm10: {}\n'.format(pm10))
     fo.write('us-epa-index: {}\n'.format(usepaindex))
     fo.write('gb-defra-index: {}\n'.format(gbdefraindex))
+    fo.write('windchillc: {}\n'.format(windchillc))
+    fo.write('windchillf: {}\n'.format(windchillf))
+    fo.write('heatindexc: {}\n'.format(heatindexc))
+    fo.write('heatindexf: {}\n'.format(heatindexf))
+    fo.write('dewpointc: {}\n'.format(dewpointc))
+    fo.write('dewpointf: {}\n'.format(dewpointf))
     fo.close()
     ################################ write clean data on a file
     #                   set the path for general current clean data
@@ -230,6 +260,12 @@ try:
     fo.write('{}\n'.format(pm10))
     fo.write('{}\n'.format(usepaindex))
     fo.write('{}\n'.format(gbdefraindex))
+    fo.write('{}\n'.format(windchillc))
+    fo.write('{}\n'.format(windchillf))
+    fo.write('{}\n'.format(heatindexc))
+    fo.write('{}\n'.format(heatindexf))
+    fo.write('{}\n'.format(dewpointc))
+    fo.write('{}\n'.format(dewpointf))
     fo.close()
     ################################ create FLAG path
     #                   set the path for the FLAGS
